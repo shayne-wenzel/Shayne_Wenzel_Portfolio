@@ -101,7 +101,7 @@ button:focus,
   grid-gap: 20px;
 }
 .grid__item {
-  background-color: lightgray;
+  background-color: none;
 }
 
 .button__secondary {
