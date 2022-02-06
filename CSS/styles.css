@@ -6,20 +6,20 @@ Primary Color (Purple): #700B8B;
 Secondary Color (Cyan): #9CEABF;
  */
 
- :root {
-   --link-color: #357b70;
-   --primary-color: #700B8B;
-   --secondary-color: #9CEABF;
-   --white: #ffffff;
-   --black: #000000;
-   --primany-font-weight: 700px;
- }
+:root {
+  --link-color: #357b70;
+  --primary-color: #700b8b;
+  --secondary-color: #9ceabf;
+  --white: #fff;
+  --black: #000;
+  --primary-font-weight: 700px;
+}
 
- * {
-   box-sizing: border-box;
- }
+* {
+  box-sizing: border-box;
+}
 
- .page-header {
+.page-header {
   display: flex;
   width: 100%;
   padding: 20px;
@@ -33,6 +33,7 @@ Secondary Color (Cyan): #9CEABF;
   flex-grow: 1;
   text-align: right;
 }
+
 body {
   font-family: 'EB Garamond', serif;
   font-weight: 400;
@@ -55,7 +56,8 @@ h3 {
   font-weight: var(--primany-font-weight);
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -84,7 +86,6 @@ button,
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   transition-duration: 0.9s;
   transition-property: opacity;
-
 }
 
 button:hover,
@@ -100,8 +101,9 @@ button:focus,
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
+
 .grid__item {
-  background-color: none;
+  background-color: white;
 }
 
 .button__secondary {
@@ -135,12 +137,14 @@ button:focus,
   flex-direction: column;
   text-align: center;
 }
+
 .page-footer {
   clear: both;
   display: flex;
   flex-direction: column;
   text-align: center;
 }
+
 .profile {
   max-width: 700px;
   margin: 0 auto;
@@ -148,30 +152,33 @@ button:focus,
 
 @keyframes cloud-lg-move {
   from {
-    transform: translate(6, 23px);
+    transform: translate(6px, 23px);
   }
+
   to {
     transform: translate(100px, 23px);
   }
 }
 
 @keyframes cloud-med-move-reverse {
-    from {
-     transform: translate(50px, 32px);
-   }
-   to {
-     transform: translate(0px, 32px);
-   }
- }
+  from {
+    transform: translate(50px, 32px);
+  }
+
+  to {
+    transform: translate(1px, 32px);
+  }
+}
 
 @keyframes cloud-s-move-reverse {
   from {
-     transform: translate(80px, 32px);
-   }
-   to {
-     transform: translate(0px, 32px);
-   }
- }
+    transform: translate(80px, 32px);
+  }
+
+  to {
+    transform: translate(1px, 32px);
+  }
+}
 
 .cloud-lg {
   animation: 10s cloud-lg-move infinite alternate ease-out;
@@ -184,24 +191,29 @@ button:focus,
 .cloud-med {
   animation: 10s cloud-med-move-reverse infinite alternate linear;
 }
+
 @media all and (max-width: 500px) {
   .grid {
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
