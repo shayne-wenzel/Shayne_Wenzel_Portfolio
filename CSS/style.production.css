@@ -12,13 +12,12 @@ Text Color (Black): #000000;
 Primary Color (Purple): #700B8B;
 Secondary Color (Cyan): #9CEABF;
  */
+* {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
 
- * {
-   -webkit-box-sizing: border-box;
-           box-sizing: border-box;
- }
-
- .page-header {
+.page-header {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -28,16 +27,17 @@ Secondary Color (Cyan): #9CEABF;
 
 .page-header__item {
   -webkit-box-flex: 0;
-      -ms-flex: 0 1 200px;
-          flex: 0 1 200px;
+  -ms-flex: 0 1 200px;
+  flex: 0 1 200px;
 }
 
 .page-header__item:last-child {
   -webkit-box-flex: 1;
-      -ms-flex-positive: 1;
-          flex-grow: 1;
+  -ms-flex-positive: 1;
+  flex-grow: 1;
   text-align: right;
 }
+
 body {
   font-family: 'EB Garamond', serif;
   font-weight: 400;
@@ -60,7 +60,8 @@ h3 {
   font-weight: 700px;
 }
 
-a:hover, a:focus {
+a:hover,
+a:focus {
   text-decoration: none;
 }
 
@@ -80,34 +81,32 @@ button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #700B8B;
-  color: #ffffff;
+  background-color: #700b8b;
+  color: #fff;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.9s;
-          transition-duration: 0.9s;
+  transition-duration: 0.9s;
   -webkit-transition-property: opacity;
   transition-property: opacity;
-
 }
 
 .button {
   border: none;
   display: inline-block;
   font-family: inherit;
-  background-color: #700B8B;
-  color: #ffffff;
+  background-color: #700b8b;
+  color: #fff;
   text-decoration: none;
   padding: 10px;
   border-radius: 3px;
   border-bottom: 2px solid rgba(0, 0, 0, 0.3);
   -webkit-transition-duration: 0.9s;
-          transition-duration: 0.9s;
+  transition-duration: 0.9s;
   -webkit-transition-property: opacity;
   transition-property: opacity;
-
 }
 
 button:hover,
@@ -125,13 +124,14 @@ button:focus,
   grid-template-columns: 1fr 1fr 1fr;
   grid-gap: 20px;
 }
+
 .grid__item {
   background-color: none;
 }
 
 .button__secondary {
-  background-color: #9CEABF;
-  color: #000000;
+  background-color: #9ceabf;
+  color: #000;
 }
 
 .navigation-list {
@@ -161,10 +161,11 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
+
 .page-footer {
   clear: both;
   display: -webkit-box;
@@ -172,10 +173,11 @@ button:focus,
   display: flex;
   -webkit-box-orient: vertical;
   -webkit-box-direction: normal;
-      -ms-flex-direction: column;
-          flex-direction: column;
+  -ms-flex-direction: column;
+  flex-direction: column;
   text-align: center;
 }
+
 .profile {
   max-width: 700px;
   margin: 0 auto;
@@ -184,103 +186,114 @@ button:focus,
 @-webkit-keyframes cloud-lg-move {
   from {
     -webkit-transform: translate(6, 23px);
-            transform: translate(6, 23px);
+    transform: translate(6, 23px);
   }
+
   to {
     -webkit-transform: translate(100px, 23px);
-            transform: translate(100px, 23px);
+    transform: translate(100px, 23px);
   }
 }
 
 @keyframes cloud-lg-move {
   from {
     -webkit-transform: translate(6, 23px);
-            transform: translate(6, 23px);
+    transform: translate(6, 23px);
   }
+
   to {
     -webkit-transform: translate(100px, 23px);
-            transform: translate(100px, 23px);
+    transform: translate(100px, 23px);
   }
 }
 
 @-webkit-keyframes cloud-med-move-reverse {
-    from {
-     -webkit-transform: translate(50px, 32px);
-             transform: translate(50px, 32px);
-   }
-   to {
-     -webkit-transform: translate(0px, 32px);
-             transform: translate(0px, 32px);
-   }
- }
+  from {
+    -webkit-transform: translate(50px, 32px);
+    transform: translate(50px, 32px);
+  }
+
+  to {
+    -webkit-transform: translate(1px, 32px);
+    transform: translate(1px, 32px);
+  }
+}
 
 @keyframes cloud-med-move-reverse {
-    from {
-     -webkit-transform: translate(50px, 32px);
-             transform: translate(50px, 32px);
-   }
-   to {
-     -webkit-transform: translate(0px, 32px);
-             transform: translate(0px, 32px);
-   }
- }
+  from {
+    -webkit-transform: translate(50px, 32px);
+    transform: translate(50px, 32px);
+  }
+
+  to {
+    -webkit-transform: translate(1px, 32px);
+    transform: translate(1px, 32px);
+  }
+}
 
 @-webkit-keyframes cloud-s-move-reverse {
   from {
-     -webkit-transform: translate(80px, 32px);
-             transform: translate(80px, 32px);
-   }
-   to {
-     -webkit-transform: translate(0px, 32px);
-             transform: translate(0px, 32px);
-   }
- }
+    -webkit-transform: translate(80px, 32px);
+    transform: translate(80px, 32px);
+  }
+
+  to {
+    -webkit-transform: translate(1px, 32px);
+    transform: translate(1px, 32px);
+  }
+}
 
 @keyframes cloud-s-move-reverse {
   from {
-     -webkit-transform: translate(80px, 32px);
-             transform: translate(80px, 32px);
-   }
-   to {
-     -webkit-transform: translate(0px, 32px);
-             transform: translate(0px, 32px);
-   }
- }
+    -webkit-transform: translate(80px, 32px);
+    transform: translate(80px, 32px);
+  }
+
+  to {
+    -webkit-transform: translate(1px, 32px);
+    transform: translate(1px, 32px);
+  }
+}
 
 .cloud-lg {
   -webkit-animation: 10s cloud-lg-move infinite alternate ease-out;
-          animation: 10s cloud-lg-move infinite alternate ease-out;
+  animation: 10s cloud-lg-move infinite alternate ease-out;
 }
 
 .cloud-s {
   -webkit-animation: 10s cloud-s-move-reverse infinite alternate ease-in;
-          animation: 10s cloud-s-move-reverse infinite alternate ease-in;
+  animation: 10s cloud-s-move-reverse infinite alternate ease-in;
 }
 
 .cloud-med {
   -webkit-animation: 10s cloud-med-move-reverse infinite alternate linear;
-          animation: 10s cloud-med-move-reverse infinite alternate linear;
+  animation: 10s cloud-med-move-reverse infinite alternate linear;
 }
+
 @media all and (max-width: 500px) {
   .grid {
     -ms-grid-columns: 1fr;
     grid-template-columns: 1fr;
   }
 }
-@media all and (min-width: 500px) and (max-width: 750px){
+
+@media all and (min-width: 500px) and (max-width: 750px) {
   .grid {
     -ms-grid-columns: 1fr 20px 1fr;
     grid-template-columns: 1fr 1fr;
   }
 }
+
 @media all and (max-width: 750px) {
   .grid {
     grid-gap: 10px;
   }
+
   .grid__item:last-child {
     grid-column: auto / auto;
     grid-row: auto / auto;
   }
+
   h1 {
     font-size: 22px;
   }
