@@ -131,7 +131,7 @@ button:focus,
 }
 
 .grid__item {
-  background-color: none;
+  background-color: #fff;
 }
 
 .button__secondary {
@@ -217,8 +217,8 @@ button:focus,
 
 @keyframes cloud-lg-move {
   from {
-    -webkit-transform: translate(6, 23px);
-    transform: translate(6, 23px);
+    -webkit-transform: translate(6px, 23px);
+    transform: translate(6px, 23px);
   }
 
   to {
