@@ -7,7 +7,7 @@ Secondary Color (Cyan): #9CEABF;
  */
 
 :root {
-  --link-color: #357b70;
+  --link-color: #000;
   --primary-color: #700b8b;
   --secondary-color: #9ceabf;
   --white: #fff;
@@ -34,11 +34,16 @@ Secondary Color (Cyan): #9CEABF;
   text-align: right;
 }
 
+html {
+  height: 100%;
+}
+
 body {
   font-family: 'EB Garamond', serif;
   font-weight: 400;
   font-size: 16px;
   line-height: 1.6;
+  height: 100%;
 }
 
 h1 {
@@ -62,15 +67,11 @@ a:focus {
 }
 
 a:visited {
-  color: #05676e;
+  color: #000;
 }
 
 a:active {
   color: #489c79;
-}
-
-a {
-  color: var(--link-color);
 }
 
 button,
@@ -121,7 +122,7 @@ button:focus,
 }
 
 .navigation-list__item--active {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 .profile__portrait {
