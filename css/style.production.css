@@ -62,11 +62,11 @@ h3 {
 
 a:hover,
 a:focus {
-  text-decoration: none;
+  text-decoration: underline;
 }
 
 a:visited {
-  color: #05676e;
+  color: #000;
 }
 
 a:active {
@@ -74,7 +74,12 @@ a:active {
 }
 
 a {
-  color: #357b70;
+  color: #000;
+}
+
+#download {
+  color: #fff;
+  text-decoration: none;
 }
 
 button {
@@ -143,8 +148,12 @@ button:focus,
   margin-left: 15px;
 }
 
-.navigation-list__item--active {
+.navigation-list__item {
   text-decoration: none;
+}
+
+.navigation-list__item--active {
+  text-decoration: underline;
 }
 
 .profile__portrait {
@@ -181,6 +190,16 @@ button:focus,
 .profile {
   max-width: 700px;
   margin: 0 auto;
+}
+
+.about {
+  max-width: 1000px;
+  margin: 0 auto;
+}
+
+.responsive {
+  width: 100%;
+  height: auto;
 }
 
 @-webkit-keyframes cloud-lg-move {
