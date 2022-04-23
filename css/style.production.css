@@ -82,6 +82,10 @@ a {
   text-decoration: none;
 }
 
+p {
+  font-family: sans-serif;
+}
+
 button {
   border: none;
   display: inline-block;
@@ -131,7 +135,7 @@ button:focus,
 }
 
 .grid__item {
-  background-color: #fff;
+  background-color: none;
 }
 
 .button__secondary {
